@@ -1,7 +1,24 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+  fun main(args: Array<String>) {
+      greetPerson("Myres")
+      greetPerson("Rose")
+      var remainder=division(33,4)
+      println(remainder)
+      var addition= sum(1 ,2 ,3 ,4)
+      println(addition)
+      interesting( "watching documentaries")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+  }
+fun greetPerson(name: String){
+      println("Hello $name")
 }
+  fun division(num1:Int, num2:Int):Int{
+      var remainder=num1%num2
+      return(remainder)
+  }
+  fun sum(numb1:Int, numb2:Int, numb3:Int, numb4:Int) :Int{
+     var addition=numb1 +numb2 +numb3 +numb4
+      return(addition)
+  }
+  fun interesting(fact: String){
+      println("I love $fact") }
+
